@@ -37,4 +37,6 @@ Bash
 npm run dev
 
 4. Acceso:
-Abre http://localhost:3000 en tu navegador.
+Abre http://localhost:3000 en tu navegador web.
+
+Nota de seguridad: Para el despliegue configuré las variables de entorno (.env.local) requeridas en la plataforma Vercel, cumpliendo con las buenas prácticas de seguridad para no exponer credenciales en el repositorio público.
