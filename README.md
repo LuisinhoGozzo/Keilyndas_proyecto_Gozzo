@@ -27,6 +27,7 @@ Keilyndas es una plataforma web completa orientada a la gestión de citas y serv
    ```bash
    git clone [https://github.com/LuisinhoGozzo/Keilyndas_proyecto_Gozzo.git](https://github.com/LuisinhoGozzo/Keilyndas_proyecto_Gozzo.git)
 cd Keilyndas_proyecto_Gozzo
+
 2. Instalar dependencias:
 Bash
 npm install
