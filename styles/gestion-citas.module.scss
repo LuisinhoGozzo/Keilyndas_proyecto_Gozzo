@@ -1,0 +1,142 @@
+.container {
+  padding: 20px;
+  color: #ffffff;
+  width: 98%;
+  margin: auto;
+}
+
+.titulo {
+  color: #ff007f;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.tablaWrapper {
+  width: 100%;
+  overflow: visible;
+  transition: all 0.3s ease;
+}
+
+.tablaContainer {
+  background: #1c0914;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ff007f;
+  width: 100%;
+
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #1c0914;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ff007f;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ff0055;
+  }
+}
+
+.tabla {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.trHead {
+  color: #ff007f;
+  border-bottom: 2px solid #ff007f;
+}
+
+.th {
+  padding: 10px;
+  white-space: nowrap;
+}
+.td {
+  padding: 10px;
+}
+
+.fila {
+  border-bottom: 1px solid #333;
+}
+
+.input {
+  width: 100%;
+  min-width: 120px;
+  padding: 5px;
+  background: #1c0914;
+  border: 1px solid #ff007f;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.btnLime {
+  color: lime;
+  border-color: lime;
+}
+.btnRed {
+  color: red;
+  border-color: red;
+}
+.btnPink {
+  color: #ff007f;
+  border-color: #ff007f;
+}
+.btnGold {
+  color: gold;
+  border-color: gold;
+}
+
+.linkRegresar {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #ff007f;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+@media (max-width: 550px) {
+  .tablaWrapper {
+    transform: scale(0.53);
+    transform-origin: top center;
+    width: 188.6%;
+    margin-left: -44.3%;
+    margin-bottom: -150px;
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .tablaWrapper {
+    transform: scale(0.45);
+    width: 222%;
+    margin-left: -61%;
+    margin-bottom: -200px;
+  }
+}

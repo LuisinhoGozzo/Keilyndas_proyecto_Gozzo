@@ -1,0 +1,98 @@
+.container {
+  min-height: 100vh;
+  padding: 1px 10px 40px 1px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainWrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cabecera {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.etiqueta {
+  color: #ff007f;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+  }
+}
+
+.seccion {
+  background-color: #1c0914;
+  border: 2px solid #ff007f;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.15);
+  box-sizing: border-box;
+}
+
+.tituloSeccion {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.listaFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.item {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subtitulo {
+  color: #ff007f;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.texto {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.cardHigiene {
+  background: #0d040a;
+  padding: 15px 20px;
+  border-radius: 14px;
+  border: 1px solid #331526;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}

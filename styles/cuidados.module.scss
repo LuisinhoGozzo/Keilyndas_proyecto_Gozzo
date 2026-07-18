@@ -1,0 +1,203 @@
+.container {
+  min-height: 100vh;
+  padding: 1px 8px 60px 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Aqui oculto el scroll horizontal */
+}
+
+.mainCard {
+  background-color: #1c0914;
+  border: 2px solid #ff007f;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.2);
+  width: 100%;
+  max-width: 950px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 35px 20px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 340px) {
+    padding: 20px 10px;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitulo {
+  color: #ff007f;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+
+  span {
+    color: #ff007f;
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background-color: #ff007f;
+  margin: 0 auto 25px auto;
+  border-radius: 2px;
+}
+
+.descripcionHeader {
+  color: #ffccd8;
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+  }
+}
+
+.bloqueSeccion {
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.seccionTitulo {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed rgba(255, 0, 127, 0.3);
+  padding-bottom: 12px;
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+}
+
+.gridTips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.tipCard {
+  background-color: #0d040a;
+  border: 1px solid rgba(255, 0, 127, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: #ff007f;
+    box-shadow: 0 8px 20px rgba(255, 0, 127, 0.15);
+  }
+}
+
+.icono {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.tipTitulo {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tipDescripcion {
+  color: #e0e0e0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300;
+}
+
+.gridAlertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.alertaCard {
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.badge {
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.alertaTitulo {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+
+.listaAlerta {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemAlerta {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 300;
+  word-wrap: break-word;
+}

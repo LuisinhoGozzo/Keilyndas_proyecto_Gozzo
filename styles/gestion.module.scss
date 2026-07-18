@@ -1,0 +1,83 @@
+.container {
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.titulo {
+  color: #ff007f;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: transparent;
+  padding: 22px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.label {
+  color: #ff007f;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+
+.textoDato {
+  font-size: 1.2rem;
+  margin: 8px 0 0 0;
+  font-weight: 600;
+  color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.divisor {
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}
+
+.contenedorBotones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: -21px;
+  margin-bottom: -61px;
+  box-sizing: border-box;
+}
+
+.btnNavegacion {
+  background: #2a101d;
+  border: 2px solid #ff007f;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+}

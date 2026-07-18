@@ -1,0 +1,169 @@
+.container {
+  background-image:
+    linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.92)),
+    url("/assets/1fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 60px 20px;
+}
+
+.mainBox {
+  background-color: transparent;
+  border: 2px solid #ff007f;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.2);
+  width: 100%;
+  max-width: 800px;
+  padding: 1px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.titulo {
+  font-size: 3.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  span {
+    color: #ff007f;
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.separador {
+  width: 80px;
+  height: 3px;
+  background-color: #ff007f;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.descripcion {
+  font-size: 1.35rem;
+  color: #ffccd8;
+  max-width: 650px;
+  line-height: 1.7;
+  margin: 0;
+
+  a {
+    color: #ff007f;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.seccionOpiniones {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: #ff007f;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tituloOpiniones {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  letter-spacing: 1px;
+}
+
+.gridTestimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonioCard {
+  background-color: #12040d;
+  border: 1px solid rgba(255, 0, 127, 0.15);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #ff007f;
+    box-shadow: 0 10px 25px rgba(255, 0, 127, 0.15);
+  }
+}
+
+.etiqueta {
+  background-color: rgba(255, 0, 127, 0.1);
+  color: #ff007f;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.comentario {
+  color: #e0e0e0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0 0 25px 0;
+  word-wrap: break-word;
+}
+
+.footerCard {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 15px;
+
+  h4 {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  span {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+  }
+}

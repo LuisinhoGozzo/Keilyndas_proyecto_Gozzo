@@ -1,0 +1,149 @@
+.container {
+  min-height: 100vh;
+  padding: 1px 10px 60px 10px;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mainWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 45px;
+  padding: 0 10px;
+}
+
+.subtitulo {
+  color: #ff007f;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.descripcionHeader {
+  color: #ffccd8;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 12px auto 0;
+  font-style: italic;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  gap: 30px;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #1c0914;
+  border: 2px solid #ff007f;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 0, 127, 0.2);
+  }
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid transparent;
+  background-color: rgba(255, 0, 127, 0.05);
+
+  .nombre {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.9;
+    flex-grow: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nombre {
+  color: #ff007f;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.descripcion {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 300;
+  flex-grow: 1;
+}
+
+.precio {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+
+.imagenContainer {
+  width: 100%;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 0, 127, 0.4);
+  background-color: #000;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

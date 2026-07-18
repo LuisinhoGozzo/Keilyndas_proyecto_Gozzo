@@ -1,0 +1,134 @@
+.container {
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 15px 10px 40px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mainBox {
+  background-color: #1c0914;
+  border: 2px solid #ff007f;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.2);
+  width: 100%;
+  max-width: 900px;
+  padding: 35px 20px;
+  margin-top: 0;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    padding: 25px 15px;
+  }
+}
+
+.cabecera {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tagline {
+  color: #ff007f;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  line-height: 1.1;
+
+  span {
+    color: #ff007f;
+    display: block;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+    span { font-size: 1.5rem; }
+  }
+}
+
+.separador {
+  width: 80px;
+  height: 3px;
+  background-color: #ff007f;
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+}
+
+.intro {
+  color: #ffccd8;
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.seccion {
+  border-bottom: 1px solid rgba(255, 0, 127, 0.15);
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.subtitulo {
+  color: #ff007f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+.lista {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    list-style-type: square;
+  }
+}
+
+.footer {
+  margin-top: 35px;
+  text-align: center;
+
+  p {
+    color: #888;
+    font-size: 0.8rem;
+  }
+}
+
+.btnRegresar {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border: 1px solid #ff007f;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #ff007f;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+  }
+}
